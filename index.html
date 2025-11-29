@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker v3</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" async></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container-md mycontainer">
+        
+            <div class="card my-card">
+                <div class="card-header my-header">
+                   <p class="lead fs-1 card-title" >Password Strength Checker</p>
+                </div>
+                <div class="card-body">
+                    <div class="row d-flex flex-wrap-reverse">
+                        <div class="col-lg-6 col-12 my-form">
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" id="inputName" class="form-control" aria-describedby="nameHelpBlock" autocomplete="off" >
+                            <div id="userNameQuery" class="form-text">
+                                
+                            </div>
+                            <div class="hidden passwordInput">
+                                <label for="inputPassword5" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                                    <span class="input-group-text bg-secondary showpass">
+                                        <img src="" alt="" class="eye">
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-secondary mb-3 mt-5 check-password hidden">Check Password</button>
+                
+                                <button type="button" class="btn btn-primary disabled mb-3 mt-5 hidden" id="toRemove">Make Account</button>
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-5 col-12 my-rules">
+                            <p class="lead fs-3 ms-4">Please add all of these to your password:</p>
+                            <ul class="list-group my-group ">
+                                <li class="list-group-item fs-4 ms-4 lead">
+                                    Atleast 8 characters
+                                    
+                                </li>
+                                <li class="list-group-item fs-4 ms-4 lead">
+                                    Atleast one lowercase character
+                                    
+                                </li>
+                                <li class="list-group-item fs-4 ms-4 lead">
+                                    Atlease one uppercase character
+                                    
+                                </li>
+                                <li class="list-group-item fs-4 ms-4 lead">
+                                    Atleast one number
+                                    
+                                </li>
+                                <li class="list-group-item fs-4 ms-4 lead">
+                                    Atleast one special character ($, @)
+                                    
+                                </li>
+                                <li class="list-group-item fs-4 ms-4 lead">
+                                    No easy passwords
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    </main>
+    <!-- BS script -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
+</body>
+</html>
